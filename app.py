@@ -4,7 +4,7 @@ import psycopg2
 import sqlalchemy as db
 
 engine = db.create_engine(
-    'postgresql://postgres:postgres@localhost:5432/postgres')
+    'postgresql://postgres:tiqcIg-5jixqe-quzzyw@db.amgskkqiswwpiytonjre.supabase.co:5432/postgres')
 c = engine.connect()
 
 

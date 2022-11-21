@@ -3,7 +3,7 @@ import pandas as pd
 import sqlalchemy as db
 
 engine = db.create_engine(
-    'postgresql://postgres:tiqcIg-5jixqe-quzzyw@db.amgskkqiswwpiytonjre.supabase.co:5432/postgres')
+    'postgresql://postgres:tUhdem-8xadpe-sivwip@db.zfqezzcygdozfkssctbu.supabase.co:5432/postgres')
 c = engine.connect()
 
 

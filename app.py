@@ -1,10 +1,18 @@
 import streamlit as st
 import pandas as pd
 import sqlalchemy as db
+import psycopg2
 
-engine = db.create_engine(
-    'postgresql://postgres:postgres@localhost:5432/postgres')
-c = engine.connect()
+
+def init_connection():
+    return psycopg2.connect(**st.secrets["postgres"])
+
+# engine = db.create_engine(
+#     'postgresql://postgres:postgres@localhost:5432/postgres')
+# c = engine.connect()
+
+
+c = init_connection()
 
 
 def add_data_dt(id, description):
